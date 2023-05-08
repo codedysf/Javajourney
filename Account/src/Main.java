@@ -18,7 +18,7 @@ public class Main {
         myAccount.setName(theName);//put theName in myAccount
 
         // to print the name save in myAccount
-        System.out.println("my name is " + myAccount.getName());
+        System.out.printf("my name is : %n%s" ,myAccount.getName());
 
     }
 }

@@ -10,6 +10,6 @@ public class Account {
 
     //method to retrieve the name from the object
     public String getName() {
-        return name; // return value of the name to caller
+        return name;
     }
 }

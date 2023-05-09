@@ -1,37 +1,59 @@
 public class Employee {
 
+    // instance variable
     private String firstName;
     private String lastName;
     private double monthlySalary;
 
+
+    //constructor that initializes the three instance variables
     public Employee(String firstName, String lastName, double monthlySalary)
     {
         this.firstName=firstName;
         this.lastName=lastName;
         this.monthlySalary=monthlySalary;
     }
-
-    public void setFirstName(String firstName) {
+    // Getter and setter method for firstname
+    public void setFirstName(String firstName)
+    {
         this.firstName = firstName;
     }
 
-    public String getFirstName() {
+    public String getFirstName()
+    {
         return firstName;
     }
 
-    public void setLastName(String lastName) {
+    // Getter and setter method for lastname
+    public void setLastName(String lastName)
+    {
         this.lastName = lastName;
     }
 
-    public String getLastName() {
+    public String getLastName()
+    {
         return lastName;
     }
 
-    public void setMonthlySalary(double monthlySalary) {
-        this.monthlySalary = monthlySalary;
+    // Getter and setter method for monthlySalary
+    public void setMonthlySalary(double monthlySalary)
+    {
+        if (monthlySalary > 0)
+            this.monthlySalary = monthlySalary;
+        else
+           this.monthlySalary = 0.0;
     }
 
-    public double getMonthlySalary() {
+    public double getMonthlySalary()
+
+    {
         return monthlySalary;
+    }
+
+    public void employeerise(double increment)
+    {
+        if (increment > 0.0)
+            monthlySalary= monthlySalary + increment;
+
     }
 }

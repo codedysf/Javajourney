@@ -63,10 +63,10 @@ public class Main {
         double average = (double) total / gradeCounter;
 
         // output summary of results
-         System.out.printf("Total of the %d grades entered is %d%n",
-                gradeCounter, total);
+         System.out.printf("Total of the %d grades entered is %d%n",gradeCounter, total);
          System.out.printf("Class average is %.2f%n", average);
-        System.out.printf("%n%s%n%s%d%n%s%d%n%s%d%n%s%d%n%s%d%n",
+
+         System.out.printf("%n%s%n%s%d%n%s%d%n%s%d%n%s%d%n%s%d%n",
                 "Number of students who received each grade:",
                 "A: ", aCount, // display number of A grades
                 "B: ", bCount, // display number of B grades
@@ -76,7 +76,5 @@ public class Main {
          } // end if
          else // no grades were entered, so output appropriate message
             System.out.println("No grades were entered");
-
-         // end main// end class LetterGrade
-    }
+    }// end main// end class LetterGrade
 }

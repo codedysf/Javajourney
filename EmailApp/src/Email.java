@@ -19,12 +19,12 @@ public class Email  {
     {
         this.firstName=firstName;
         this.lastName=lastName;
-        System.out.println("EMAIL CREATED:  " + this.firstName + " " + this.lastName);
+
 
 
         // Call method asking for department - return the department
         this.department= setDepartment();
-        System.out.println("Department:  " + this.department);
+
 
 
         //Call a method that return a random password
@@ -33,9 +33,6 @@ public class Email  {
 
         //Combine element to generate email
         email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companySuffix;
-        System.out.print("Your Email is: " + email);
-
-
     }
 
     // Ask for the department (this is a method)
@@ -104,9 +101,9 @@ public class Email  {
 
     public String showInfo()
     {
-        return "\nDISPLAY NAME: " +firstName + " " + lastName +
+        return "DISPLAY NAME: " +firstName + " " + lastName +
                 "\nCOMPANY MAIL: " + email +
-                "\nMAILBOX CAPACITY" + mailboxCapacity + "mb" ;
+                "\nMAILBOX CAPACITY: " + mailboxCapacity + " mb" ;
     }
 
 }

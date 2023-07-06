@@ -33,13 +33,16 @@ public class Email  {
 
         //Combine element to generate email
         email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companySuffix;
+
+
     }
 
     // Ask for the department (this is a method)
 
     private String setDepartment()
     {
-        System.out.print("New worker:" + firstName + ". Department Codes:\n1 for sales\n2 for Development\n3 for Accounting\nENTER YOUR DEPARTMENT CODE:  ");
+        System.out.print("New worker:" + firstName + ". Department Codes:\n1 for sales\n2 for Development\n3 " +
+                "for Accounting\nENTER YOUR DEPARTMENT CODE:  ");
         Scanner input = new Scanner(System.in);
         int depChoice = input.nextInt();
         if (depChoice == 1){
